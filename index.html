@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv=“Content-Type” content=“text/html; charset=UTF-8”>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Testing</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav__container">
+      <ul class="nav__list" onclick="myFunction(this)">
+        <li class="nav__item-home"><a class="nav__button--blue" href="#">Home</a></li>
+        <li class="nav__item"><a class="nav__button--blue" href="#">About</a></li>
+        <li class="nav__item"><a class="nav__button--blue" href="#">Location</a></li>
+        <li class="nav__item"><a class="nav__button--blue" href="#">Portfolio</a></li>
+        <li class="nav__item"><a class="nav__button--blue" href="#">Contact</a></li>
+        
+        <div class="hb-container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        
+      </ul>
+  
+      <script>
+      function myFunction(x) {
+          x.classList.toggle("change");
+      }
+      </script>
+    </nav>
+    
+    <head>
+      <div class="header">
+        <div class="header__content">
+          <p>It’s not what you say,<br> 
+             it’s what you do.</p>
+        </div>
+      </div>
+    </head>
+  </header>
+  
+  <div class="container">
+    <div class="grid">
+      <div class="grid__main">
+        <div class="grid__content">Learn</div>
+        <div class="grid__content">Practice</div>
+        <div class="grid__content">Repeat</div>
+        </div>
+    </div>
+  </div>
+
+  <div class="contact-panel">
+    <div class="contact-panel__left-content">Don’t be shy,<br> talk to us.</div>
+    <div class="contact-panel__right-content">
+      <p class="email">Email<br></p>
+      <a class="email__link" href="#">email@gmail.com</a>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer">&copy v1st. 2017 | Privacy Policy</div>
+  </footer>
+</body>
+
+</html>

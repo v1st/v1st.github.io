@@ -1,0 +1,237 @@
+/*********
+
+This stylesheet is written in BEM
+
+Block = .block
+Element = .block__element
+Modifier = .block__element--modifier / .block--modifier
+
+*********/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Blocks ********************************/
+
+.containter {}
+
+.header {
+  display: grid;
+  background-color: #EEE;
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.content {
+  display: block;
+  background-color: #FFF;
+  width: 50%;
+  height: 300px;
+}
+
+.grid {
+  display: grid;
+  padding: 0% 5% 0% 5%;
+  width: 100%;
+  grid-template-columns: 1fr 90% 1fr;
+  grid-template-rows: auto;
+  background-color: #EEE;
+  color: #FFF;
+  grid-template-areas:  
+    ". main .";
+  justify-content: center;
+}
+
+.contact-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+  align-items: center;
+  background-color: #48a5e9;
+  width: 100%;
+  height: 300px;
+  padding-left: 5%;
+}
+
+.footer {
+  display: flex;
+  background-color: #48a5e9;
+  color: #FFF;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  font-size: .7em;
+  padding: 20px 0px;
+}
+
+/* Elements ******************************/
+
+.nav__list {
+  display: flex;
+  background-color: #EEE;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav__item-home {
+  display: inline-block;
+  margin-right: auto;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__item a, .nav__item-home a {
+  display: grid;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0px 20px;
+  transition: all 0.1s linear;
+}
+
+.header__content{
+  font-size: 4em;
+  font-weight: bold;
+  margin: 2em auto;
+}
+
+.grid__main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;  
+  height: auto;
+}
+
+.grid__content {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  background-color: #FFF;
+  margin-bottom: 8%;
+  border-radius: 4px;
+  box-shadow: rgba(0,0,0,0.15) 0 1.6rem 4.75rem;
+  transition: all 0.1s linear;
+  background-color: #48a5e9;
+  font-size: 4em;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-panel__left-content {
+  color: #FFF;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.contact-panel__right-content {}
+
+.email {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.email__link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFF;
+  font-size: 2em;
+  transition: all 0.1s linear;
+}
+
+/* Modifiers *****************************/
+
+.nav__button--blue:hover {
+  display: grid;
+  color: #48a5e9;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 0px 20px;
+}
+
+.grid__content:hover {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+  box-shadow: rgba(0,0,0,0.15) 0 1.6rem 4.75rem;
+  transform: scale(0.95, 0.95);
+}
+
+.email__link:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #222;
+  font-size: 2em;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+  
+
+  .hb-container {
+      display: inline-block;
+      cursor: pointer;
+      margin: 0px 30px 0px 0px;
+  }
+
+  .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+  }
+
+  .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+      transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+
+  .change .bar2 {opacity: 0;}
+
+  .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+      transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+  
+  .nav__item {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  
+  .nav__item a {
+    display: block;
+    
+  }
+  
+  .change .nav__item {
+    display: block;
+    vertical-align: bottom;
+  }
+}
