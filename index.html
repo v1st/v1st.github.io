@@ -1,108 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700" rel="stylesheet">
-    <meta name="viewport" content="width=device-width; intial-scale=1.0">
-    
-    <title>Learning</title>
-  </head>
-  
-  <body>
-  <div class="layout">
-    
-    <nav class="nav-container">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__button" href="#">About us</a></li>
-        <li class="nav__item"><a class="nav__button" href="#">Why us?</a></li>
-        <li class="nav__item"><a class="nav__button" href="#">Contact</a></li>
-        <li class="nav__buy-item"><a class="nav__buy-button" href="#">Buy Now</a></li>
+<html>
+
+<head>
+  <meta http-equiv=“Content-Type” content=“text/html; charset=UTF-8”>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Testing</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav__container">
+      <ul class="nav__list" onclick="myFunction(this)">
+        <li class="nav__item-home"><a class="nav__button--blue" href="#">Home</a></li>
+        <li class="nav__item"><a class="nav__button--blue" href="#">About</a></li>
+        <li class="nav__item"><a class="nav__button--blue" href="#">Location</a></li>
+        <li class="nav__item"><a class="nav__button--blue" href="#">Portfolio</a></li>
+        <li class="nav__item"><a class="nav__button--blue" href="#">Contact</a></li>
+
+        <div class="hb-container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
       </ul>
+
+      <script>
+      function myFunction(x) {
+          x.classList.toggle("change");
+      }
+      </script>
     </nav>
-    
-    <header class="header">
-      <h1 class="header__title">Our Pricing</h1>
-      <p class="header__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ipsum est, dignissim eget lacus ut, maximus dictum libero. Suspendisse vitae ipsum pulvinar, ullamcorper nulla sit amet, aliquet nunc.</p>
-    </header>
-    
-    
-    
-    <section class="main">
-      <div class="price-container">
-        <div class="price-card__basic">
-          <h1 class="price-card__heading">Basic</h1>
-          <p class="price-card__price">&#36;<span class="price-card__price--number">10</span>/month</p>
-          <p class="price-card__p">100 Pages</p>
-          <p class="price-card__p">Normal  Support</p>
-          <p class="price-card__p">Quality Servers</p>
-          <button class="price-card__button--blue">Upgrade</button>
-        </div>
-        <div class="price-card__advanced">
-          <h1 class="price-card__heading">Advanced</h1>
-          <p class="price-card__price">&#36;<span class="price-card__price--number">20</span>/month</p>
-          <p class="price-card__p">300 Pages</p>
-          <p class="price-card__p">24/7 Live Support</p>
-          <p class="price-card__p">Better Servers</p>
-          <button class="price-card__button--purple">Upgrade</button>
-        </div>
-        <div class="price-card__ultimate">
-          <h1 class="price-card__heading">Ultimate</h1>
-          <p class="price-card__price">&#36;<span class="price-card__price--number">30</span>/month</p>
-          <p class="price-card__p">Unlimited Pages</p>
-          <p class="price-card__p">24/7 Live Support</p>
-          <p class="price-card__p">High Quality Servers</p>
-          <button class="price-card__button--orange">Upgrade</button>
+
+    <head>
+      <div class="header">
+        <div class="header__content">
+          <p>It’s not what you say,<br>
+             it’s what you do.</p>
         </div>
       </div>
+    </head>
+  </header>
 
-      
-      <h1 class="title"> Included with all Plans</h1>
-      <div class="main-container">     
-        <div class="card">
-          <h1>Lorem ipsum dolor sit</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis nisl at sem fringilla, eu pellentesque dui hendrerit. </p>
-        </div>  
-        <div class="card">
-          <h1>Lorem ipsum dolor sit</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis nisl at sem fringilla, eu pellentesque dui hendrerit.</p>
-        </div>      
-        <div class="card">
-          <h1>Lorem ipsum dolor sit</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis nisl at sem fringilla, eu pellentesque dui hendrerit.</p>
-        </div>    
-        <div class="card">
-          <h1>Lorem ipsum dolor sit</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis nisl at sem fringilla, eu pellentesque dui hendrerit.</p>
-        </div>      
-        <div class="card">
-          <h1>Lorem ipsum dolor sit</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis nisl at sem fringilla, eu pellentesque dui hendrerit.</p>
-        </div>      
-        <div class="card">
-          <h1>Lorem ipsum dolor sit</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis nisl at sem fringilla, eu pellentesque dui hendrerit.</p>
-        </div>    
-      </div>
-    </section>
-    
-    <section class="customer-review">
-      <h1 class="customer-title"> What do our Customer Say?</h1>
-      <p class="feedback-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eleifend elit sit amet imperdiet fermentum. Phasellus ut volutpat enim, eget euismod felis.</p>
-      <p class="feedback-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu turpis dignissim, commodo mi sed, luctus sapien. Vivamus malesuada elementum lorem in.</p>
-      <p class="feedback-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere in massa non porta. Proin pretium lacus ut enim congue, in ultricies.</p>
-    </section>
-    
-    <section class="about">
-      <h1 class="title">About Us</h1>
-      <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra est quam, volutpat tristique sem scelerisque in. Mauris quis tincidunt orci. Quisque eget purus sit amet quam luctus gravida. Integer dictum in nulla in aliquet. Aenean dapibus, tortor ac commodo malesuada, orci leo luctus nulla, vitae auctor massa nisl a diam. Nam quis condimentum purus, non eleifend urna. Proin urna risus, aliquam ut bibendum eu, iaculis ac urna. Integer ut odio ultrices, ornare ex et, rutrum ipsum. Maecenas semper est dolor.<br><br>
-
-      Sed orci mauris, eleifend non ligula sit amet, eleifend efficitur ipsum. Morbi luctus nec enim non iaculis. Pellentesque ultrices efficitur volutpat. Duis vitae accumsan urna, et aliquam erat. Sed eget pretium lacus. Ut tincidunt, tortor eget lobortis dictum, odio orci faucibus neque, at faucibus erat purus vel diam. Nullam lacinia sed odio at luctus.<br><br>
-
-      Phasellus id ante velit. Phasellus bibendum tortor ut nunc eleifend consequat. Morbi fringilla tristique sem tincidunt dignissim. In mollis imperdiet magna sit amet ultrices. Quisque dapibus quis arcu sit amet ullamcorper. Sed urna mi, fermentum quis lacus vitae, accumsan vulputate urna. Nulla ultricies sed libero at porttitor. Nam tincidunt lectus at dolor feugiat, nec laoreet mauris hendrerit. Donec sit amet eros sem. Duis quis odio orci.</p>
-    </section>
-    
-    <footer class="footer">Copyright &#169; 2017 v1st </footer>
+  <div class="container">
+    <div class="grid">
+      <div class="grid__main">
+        <div class="grid__content">Learn</div>
+        <div class="grid__content">Practice</div>
+        <div class="grid__content">Repeat</div>
+        </div>
+    </div>
   </div>
-  </body>
+
+  <div class="contact-panel">
+    <div class="contact-panel__left-content">Don’t be shy,<br> talk to us.</div>
+    <div class="contact-panel__right-content">
+      <p class="email">Email<br></p>
+      <a class="email__link" href="#">email@gmail.com</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">&#169; v1st. 2017 | Privacy Policy</div>
+  </footer>
+</body>
+
 </html>
