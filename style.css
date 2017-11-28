@@ -140,9 +140,9 @@
     margin: 10px 3em 0 auto;
   }
   .hamburger {
-    display: inline-block;
+    display: block;
     width: auto;
-    margin: 8px auto 1em 3em;
+    margin: 4px auto 1em 3em;
     cursor: pointer;
   }
   .bar1,
@@ -194,7 +194,7 @@
   font-size: 2.5em;
   font-weight: 100;
   color: #000;
-  max-height: 60px;
+  max-height: auto;
   margin: 10px auto 20px auto;
 }
 
@@ -277,7 +277,7 @@
   text-transform: uppercase;
   text-align: center;
   border-bottom: 1px solid #FFF;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .price-card__price {
@@ -383,6 +383,84 @@
   z-index: 2;
 }
 
+@media screen and (max-width: 700px) {
+  .main {
+    margin: auto;
+    padding: 0px 0 10px 0;
+  }
+
+  .price-container {
+    flex-direction: column;
+    position: static;
+    height: auto;
+  }
+  
+  .price-card__basic {
+    width: 100%;
+    height: 280px;
+    border-radius: 0px;
+    margin: auto;
+    box-shadow: none;
+  }
+  .price-card__advanced {
+    width: 100%;
+    height: 280px;
+    border-radius: 0px;
+    margin: auto;
+    box-shadow: none;
+  }
+  .price-card__ultimate {
+    width: 100%;
+    height: 280px;
+    border-radius: 0px;
+    margin: auto;
+    box-shadow: none;
+  }
+  .price-card__basic:hover {
+    transform: none;
+    z-index: 0;
+  }
+
+  .price-card__advanced:hover {
+    transform: none;
+    z-index: 0;
+  }
+
+  .price-card__ultimate:hover {
+    transform: none;
+    z-index: 0;
+  }
+  .price-card__button--blue {
+    height: 35px;
+    width: 80%;
+    max-width: 360px;    
+  }
+
+  .price-card__button--purple {
+    height: 35px;
+    width: 80%;
+    max-width: 360px;  
+  }
+
+  .price-card__button--orange {
+    height: 35px;
+    width: 80%;
+    max-width: 360px;
+  }
+  .main-container {
+    min-width: 10%;
+  }
+  .card {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
 
 /* Second Section */
 
@@ -393,7 +471,7 @@
   flex-direction: row;
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 260px;
   padding: 10px;
   margin: auto;
   overflow: hidden;
@@ -404,7 +482,7 @@
   text-align: center;
   font-size: 2.5em;
   font-weight: 100;
-  max-height: 60px;
+  max-height: auto;
   margin: 10px auto 20px auto;
 }
 
@@ -416,10 +494,10 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 100px;
+  top: 110px;
   text-align: center;
   font-size: 1.5em;
-  width: 800px;
+  max-width:  width: 800px;
   height: 125px;
   margin: auto;
   padding: 10px;
@@ -494,7 +572,19 @@
 }
 
 /* Modifiers ********************************/
-
+@media screen and (max-width: 500px) {
+  .customer-review {
+    height: 300px;
+  }
+  
+  .feedback-1,
+  .feedback-2,
+  .feedback-3 {
+    font-size: 1em;
+    
+    top: 150px;
+  }
+}
 /* About */
 
 /* Blocks ********************************/
