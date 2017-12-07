@@ -2,116 +2,148 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Learning</title>
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Web Practice</title>
   </head>
-  
+
   <body>
-  <div class="layout">
-    
-    <nav class="nav-container">
-      <ul class="nav__list" onclick="myFunction(this)">
-        <div class="hamburger" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+    <header>
+      <nav class="nav">
+        <label for="toggle">
+        <div class="hamburger__wrap">
+          <div class="hamburger__button">
+            <div class="hamburger__bar"></div>
+            <div class="hamburger__bar"></div>
+            <div class="hamburger__bar"></div>
+          </div>
         </div>
-        <li class="nav__buy-item" ><a class="nav__buy-button" href="#">Buy Now</a></li>
-        <li class="nav__item" ><a class="nav__button" href="#">About us</a></li>
-        <li class="nav__item" ><a class="nav__button" href="#">Why us?</a></li>
-        <li class="nav__item" ><a class="nav__button" href="#">Contact</a></li>   
-      </ul>
-    </nav>
-    
-    <header class="header">
-      <h1 class="header__title">Our Pricing</h1>
-      <p class="header__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ipsum est, dignissim eget lacus ut, maximus dictum libero. Suspendisse vitae ipsum pulvinar, ullamcorper nulla sit amet, aliquet nunc.</p>
+        </label>
+        <input type="checkbox" id="toggle"/>
+        
+        <ul class="nav__container">    
+          <li class="nav__item"><a class="nav__button" href="#"> Home </a></li>
+          <li class="nav__item"><a class="nav__button" href="#"> Services </a></li>
+          <li class="nav__item"><a class="nav__button" href="#"> Technology </a></li>
+          <li class="nav__item"><a class="nav__button" href="#"> Case Studies </a></li>
+          <li class="nav__item"><a class="nav__button" href="#"> About </a></li>
+          <li class="hire__item"><a class="hire__button" href="#"> Hire Us </a></li>
+        </ul>  
+      </nav>
       
-      <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-        }
-      </script>
-    </header>  
+      <section class="header__container">
+        <h1 class="header__title">We build strong and<br> reliable software solutions</h1>
+        <p class="header__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus sapien at lectus lacinia hendrerit. Cras pellentesque euismod turpis quis hendrerit.</p>
+        <div class="button__container">
+          <button class="header__button">Learn More</button>
+          <button class="header__button--purple">Our Projects</button>
+        </div>
+      </section>
+      
+    </header>
     
     <section class="main">
-      <div class="price-container">
-        <div class="price-card__basic">
-          <h1 class="price-card__heading">Basic</h1>
-          <p class="price-card__price">&#36;<span class="price-card__price--number">10</span>/month</p>
-          <p class="price-card__p">100 Pages</p>
-          <p class="price-card__p">Normal  Support</p>
-          <p class="price-card__p">Quality Servers</p>
-          <button class="price-card__button--blue">Upgrade</button>
-        </div>
-        <div class="price-card__advanced">
-          <h1 class="price-card__heading">Advanced</h1>
-          <p class="price-card__price">&#36;<span class="price-card__price--number">20</span>/month</p>
-          <p class="price-card__p">300 Pages</p>
-          <p class="price-card__p">24/7 Live Support</p>
-          <p class="price-card__p">Better Servers</p>
-          <button class="price-card__button--purple">Upgrade</button>
-        </div>
-        <div class="price-card__ultimate">
-          <h1 class="price-card__heading">Ultimate</h1>
-          <p class="price-card__price">&#36;<span class="price-card__price--number">30</span>/month</p>
-          <p class="price-card__p">Unlimited Pages</p>
-          <p class="price-card__p">24/7 Live Support</p>
-          <p class="price-card__p">High Quality Servers</p>
-          <button class="price-card__button--orange">Upgrade</button>
-        </div>
-      </div>
-
+      <h1 class="main__title">Our Solutions</h1>
+      <p class="main__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum vitae arcu in blandit. Sed eget massa ac risus ornare commodo.</p>
       
-      <h1 class="title"> Included with all Plans</h1>
-      <div class="main-container">     
-        <div class="card">
-          <h1>Lorem ipsum dolor sit</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis nisl at sem fringilla, eu pellentesque dui hendrerit. </p>
-        </div>  
-        <div class="card">
-          <h1>Lorem ipsum dolor sit</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis nisl at sem fringilla, eu pellentesque dui hendrerit.</p>
-        </div>      
-        <div class="card">
-          <h1>Lorem ipsum dolor sit</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis nisl at sem fringilla, eu pellentesque dui hendrerit.</p>
-        </div>    
-        <div class="card">
-          <h1>Lorem ipsum dolor sit</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis nisl at sem fringilla, eu pellentesque dui hendrerit.</p>
-        </div>      
-        <div class="card">
-          <h1>Lorem ipsum dolor sit</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis nisl at sem fringilla, eu pellentesque dui hendrerit.</p>
-        </div>      
-        <div class="card">
-          <h1>Lorem ipsum dolor sit</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis nisl at sem fringilla, eu pellentesque dui hendrerit.</p>
-        </div>    
+      <div class="main-card__container">
+        <div class="main__cards">
+          <div class="icon--blue">
+            <div class="icon--business"></div>
+          </div>
+          <div class="main-card__title">Business &#38; Product Concept</div>
+          <div class="main-card__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula lorem, viverra at aliquam sit amet, consequat id augue. Cras dictum malesuada sem, eget viverra odio viverra eget.</div>
+          <button class="main__button">Learn More</button>
+        </div>
+        
+        <div class="main__cards">
+          <div class="icon--pink">
+            <div class="icon--web"></div>
+          </div>
+          <div class="main-card__title">Web &#38; Mobile Development</div>
+          <div class="main-card__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula lorem, viverra at aliquam sit amet, consequat id augue. Cras dictum malesuada sem, eget viverra odio viverra eget.</div>
+          <button class="main__button">Learn More</button>
+        </div>
+        
+        <div class="main__cards">
+          <div class="icon--purple">
+            <div class="icon--design"></div>
+          </div>
+          <div class="main-card__title">UX &#38; UI Design</div>
+          <div class="main-card__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula lorem, viverra at aliquam sit amet, consequat id augue. Cras dictum malesuada sem, eget viverra odio viverra eget.</div>
+          <button class="main__button">Learn More</button>
+        </div>
+      </div>
+      
+    </section>
+    
+    <section class="clients__container">
+      <div class="clients-content__container">
+        <h2 class="clients__header">Clients we worked with</h2>
+        <ul class="client__list">
+          <div class="coke"></div>
+          <div class="google"></div>
+          <div class="nike"></div>
+          <div class="underarmour"></div>
+          <div class="airbnb"></div>
+        </ul> 
       </div>
     </section>
     
-    <section class="customer-review">
-      <h1 class="customer-title"> What do our Customer Say?</h1>
-      <p class="feedback-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eleifend elit sit amet imperdiet fermentum. Phasellus ut volutpat enim, eget euismod felis.</p>
-      <p class="feedback-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu turpis dignissim, commodo mi sed, luctus sapien. Vivamus malesuada elementum lorem in.</p>
-      <p class="feedback-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere in massa non porta. Proin pretium lacus ut enim congue, in ultricies.</p>
+    <section class="info__container">
+      <div class="info__text">
+        <h1 class="info__title">We use cutting edge technology</h1>
+        <p class="info__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta ex sed euismod tempus. Aliquam ut odio quam. Donec interdum molestie ipsum non vulputate. Nullam nec lorem mauris. Nullam bibendum justo quis tellus egestas cursus. Cras interdum viverra velit, eu fringilla felis suscipit a. Vestibulum non urna metus.</p>
+      </div>
+      <div class="info__images">
+        <div class="info__icons"></div>
+      </div>
     </section>
     
-    <section class="about">
-      <h1 class="title">About Us</h1>
-      <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra est quam, volutpat tristique sem scelerisque in. Mauris quis tincidunt orci. Quisque eget purus sit amet quam luctus gravida. Integer dictum in nulla in aliquet. Aenean dapibus, tortor ac commodo malesuada, orci leo luctus nulla, vitae auctor massa nisl a diam. Nam quis condimentum purus, non eleifend urna. Proin urna risus, aliquam ut bibendum eu, iaculis ac urna. Integer ut odio ultrices, ornare ex et, rutrum ipsum. Maecenas semper est dolor.<br><br>
-
-      Sed orci mauris, eleifend non ligula sit amet, eleifend efficitur ipsum. Morbi luctus nec enim non iaculis. Pellentesque ultrices efficitur volutpat. Duis vitae accumsan urna, et aliquam erat. Sed eget pretium lacus. Ut tincidunt, tortor eget lobortis dictum, odio orci faucibus neque, at faucibus erat purus vel diam. Nullam lacinia sed odio at luctus.<br><br>
-
-      Phasellus id ante velit. Phasellus bibendum tortor ut nunc eleifend consequat. Morbi fringilla tristique sem tincidunt dignissim. In mollis imperdiet magna sit amet ultrices. Quisque dapibus quis arcu sit amet ullamcorper. Sed urna mi, fermentum quis lacus vitae, accumsan vulputate urna. Nulla ultricies sed libero at porttitor. Nam tincidunt lectus at dolor feugiat, nec laoreet mauris hendrerit. Donec sit amet eros sem. Duis quis odio orci.</p>
+    <section class="cards__container">
+      <div class="card--blue">
+        <h1 class="card__title">Get in touch with us</h1>
+        <p class="card__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="card__button">Hire Us</button>
+      </div>
+      
+      <div class="card--purple">
+        <h1 class="card__title">Our Projects</h1>
+        <p class="card__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="card__button">See Projects</button>
+      </div>
     </section>
     
-    <footer class="footer">Copyright &#169; 2017 v1st </footer>
-  </div>
+    <footer class="footer__container">
+      <div class="footer__spacer">
+        <div class="footer__left-side">
+          <h3 class="footer__title">lorem ipsum</h3>
+          <p class="footer__p">Curabitur fringilla ex at risus feugiat, sit amet dapibus sem vulputate. Donec sollicitudin vulputate nisi, sit amet faucibus urna. </p>
+        </div>
+      </div>
+      <div class="footer__spacer">
+        <div class="footer__column">
+          <h3 class="footer__title--small">sitemap</h3>
+          <button class="footer__button">Home</button>
+          <button class="footer__button">Technology</button>
+          <button class="footer__button">Services</button>
+          <button class="footer__button">About</button>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__title--small">case studies</h3>
+          <button class="footer__button">Swiss Airlines</button>
+          <button class="footer__button">Google</button>
+          <button class="footer__button">Apple</button>
+          <button class="footer__button">Nike</button>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__title--small">contact</h3>
+          <button class="footer__button">Jobs</button>
+          <button class="footer__button">Hire us</button>
+        </div>
+      </div>
+    </footer>
+    
   </body>
 </html>
